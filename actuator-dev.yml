@@ -1,0 +1,8 @@
+version: "3"
+services:
+  actuator:
+    image: grpdocker01:5000/examples/actuator:0.0.1
+    deploy:
+      replicas: 3
+    ports:
+      - "8889:9090"
